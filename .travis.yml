@@ -1,0 +1,10 @@
+language: java
+sudo: true
+jdk:
+  - oraclejdk8
+deploy:
+  provider: s3
+  access_key_id: "AKIAZDOLGS7LVGFRZRJO"
+  secret_access_key: "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"
+  bucket: "repo-lambda-functions"
+  skip_cleanup: true
