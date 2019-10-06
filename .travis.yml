@@ -4,11 +4,11 @@ jdk:
 - oraclejdk8
 dist: trusty
 before_install:
-  - chmod +x
+  - chmod 777
   - cd /home/travis/build/juli0mendes/user-crud/target/
   - mkdir deploy_directory
-  - chmod +x deploy_directory
-  - chmod +x user-crud-1.0.0.jar
+  - chmod 777 deploy_directory
+  - chmod 777 user-crud-1.0.0.jar
   - mv user-crud-1.0.0.jar /deploy_directory
 deploy:
   provider: s3
