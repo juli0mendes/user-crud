@@ -7,7 +7,7 @@ before_deploy:
   - cd /home/travis/build/juli0mendes/user-crud/target/
   - mkdir deploy_directory
   - chmod +x user-crud-1.0.0.jar
-  - mv user-crud-1.0.0.jar /deploy_directory
+  - cp user-crud-1.0.0.jar /deploy_directory
 deploy:
   provider: s3
   access_key_id: AKIAZDOLGS7LXBQAN3Z2
