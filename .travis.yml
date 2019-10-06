@@ -5,7 +5,7 @@ jdk:
 dist: trusty
 deploy:
   provider: s3
-  access_key_id: "AKIAZDOLGS7LZJAHZMEN"
-  secret_access_key: "error_key"
+  access_key_id: "AKIAZDOLGS7LQT2AFY6H"
+  secret_access_key: "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"
   bucket: "repo-lambda-functions"
   skip_cleanup: true
