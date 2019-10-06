@@ -4,7 +4,7 @@ jdk:
 - oraclejdk8
 dist: trusty
 deploy:
-  provider: script
+  provider:
     script:   
       - cd /home/travis/build/juli0mendes/user-crud/target/
       - mkdir deploy_directory
