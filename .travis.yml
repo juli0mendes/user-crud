@@ -2,6 +2,8 @@ language: java
 sudo: true
 jdk:
   - oraclejdk8
+before_install:
+  - chmod +x mvnw
 deploy:
   provider: s3
   access_key_id: "AKIAZDOLGS7LVGFRZRJO"
