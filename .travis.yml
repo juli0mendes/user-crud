@@ -1,5 +1,12 @@
 language: java
 sudo: true
 jdk:
-  - oraclejdk8
+- oraclejdk8
 dist: trusty
+deploy:
+  provider: s3
+  access_key_id: AKIAZDOLGS7LZJAHZMEN
+  secret_access_key:
+    secure: AYxNyFYkDQsNUMKrhcDZpaN9Gwsy94HIWlSAzhqgX7SW9I9sPk6ahL/wSYEapzyEMpzXJsg5rXOE3yrCOlviHulyHR3/+38np+D3+M+JTmKQ7xA4xvC2PRYYwtA0MO0FCaPJ33OHW5y/AcWROqeP30ySA+vfgfLQWirVYhM5lUIBAtjf6ySZYkYOGZuidj8ZZ74lQdSfTHerqKgLqTzakk6k26IsZ9ItExYET02H5wIdlmCxFlWYpbs1TkKGye8reRr48hkY5lDBmk6mND4gF/qqUVxwX5YwwqLpAezycjLaqD+78D/U3VctTJCEaR35sm/vZ+gtW74IMaXxfhAOJgsYLmeWku6HiAdYLQYqbqjt57m0fAjFxAMxWgI1LIYq7pddqHHEipI8MGPEXNgt6XucVhQlJ7iTRE2YtgWwTw9OIwV1mKJ1t8t00okC+0Uiqv/S5f69FwXBEBRytTNHjxwY8X7V3yNwpB663H9PtitFFBdAnTh6j6zyjtVvq9IaIUMXcrfuMTuATIDGwsewm0jld/V6DhkV/ePrloZjPJroB5fw9oR1C+Px/yeiWGhWwpyl+pipy9yFRgYYYmjEKl+6OjjoaHnpjLJAi9ADsLYsUB/zaKzzkZyomwyYrbKK96L5VzI1GIMu+tmZIZBMUkHrgj8lzI3ebepRi9O/zks=
+  bucket: repo-lambda-functions
+  skip_cleanup: true
